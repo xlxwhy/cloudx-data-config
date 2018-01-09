@@ -1,18 +1,20 @@
 
 spring:
     application:
-        name: cloudx-eureka
+        name: cloudx-oauth
 
 server:
-    port: 32062
+    port: 32063
+    contextPath: /uaa
+    
+security:
+    ignored: /css/**,/js/**,/favicon.ico,/webjars/**
+    user.password: password
+    
+eureka.client.serviceUrl.defaultZone: http://127.0.0.1/eureka/
 
-eureka:
-    client:
-        registerWithEureka: false  
-        fetchRegistry: false      
-        serviceUrl:
-            defaultZone: http://127.0.0.1/eureka/
 
-            
-            
-            
+
+logging.level.org.springframework.security: DEBUG
+
+           

@@ -2,6 +2,8 @@ debug: true
 server:
   port: 32064
 
+eureka.client.serviceUrl.defaultZone: http://127.0.0.1/eureka/
+
 security:
   user:
     password: user

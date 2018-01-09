@@ -1,0 +1,11 @@
+
+deploy:
+   config:   {name: config,   host: cloudx-config,   port: 32061,  uri: "${deploy.config.host}:${deploy.config.port}"     }
+   eureka:   {name: eureka,   host: cloudx-eureka,   port: 32062,  uri: "${deploy.eureka.host}:${deploy.eureka.port}"     }
+   gateway:  {name: gateway,  host: cloudx-gateway,  port: 32065,  uri: "${deploy.gateway.host}:${deploy.gateway.port}"   }
+   oauth:    {name: oauth,    host: cloudx-oauth,    port: 32063,  uri: "${deploy.oauth.host}:${deploy.oauth.port}"       }
+   view:     {name: view,     host: cloudx-view,     port: 32064,  uri: "${deploy.view.host}:${deploy.view.port}"         }
+
+
+
+      

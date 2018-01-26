@@ -1,10 +1,10 @@
 
 spring:
     application:
-        name: cloudx-eureka
+        name: cloudx-gateway
 
 server:
-    port: 32062
+    port: 32063
 
 eureka:
     client:

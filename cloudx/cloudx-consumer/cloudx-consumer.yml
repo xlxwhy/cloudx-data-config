@@ -1,0 +1,16 @@
+server:
+  port: 32064
+
+spring:
+  application:
+    name: cloudx-feign-consumer
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:32062/eureka/
+      
+feign:
+  hystrix:
+    enabled: true
+  

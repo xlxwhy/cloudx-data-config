@@ -1,0 +1,12 @@
+server:
+  port: 32063
+
+spring:
+  application:
+    name: cloudx-feign-provider
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:32062/eureka/
+      
